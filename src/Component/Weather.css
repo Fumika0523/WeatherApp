@@ -12,13 +12,16 @@ background-image: linear-gradient(55deg,#010010,#234d89);
 
 .weather-icon{
     width: 150px;
-    margin: 30px 0px;
+    margin: 35px 0px;
+/* border: 2px solid rgb(246, 122, 122); */
 }
 
 .temperature{
 color: #fff;
 font-size: 80px;
-line-height: 0.5;
+line-height: 1;
+/* border: 2px solid red; */
+margin-bottom:10px;
 }
 
 .location{
@@ -36,6 +39,7 @@ font-size: 40px;
 
 .weather-data .col{
     display: flex;
+      /* border:2px solid red; */
     align-items: flex-start;
     gap:12px;
     font-size: 22px;
@@ -43,10 +47,10 @@ font-size: 40px;
 
 .weather-data .col span{
     display: block;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .weather-data .col img{
-    width: 26px;
+    width: 35px;
     margin-top: 10px;
 }
