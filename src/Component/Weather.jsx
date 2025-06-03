@@ -71,7 +71,7 @@ const Weather = () => {
     },[])
 
   return (
-    <Container fluid className=' m-0 p-0 border-danger app border-4'>
+    <Container fluid className=' m-0 p-0 border-danger border app border-4'>
     <Row className='border-primary m-0  border-3' >
     <Col xs={11} sm={8} md={6} lg={4} className="mx-auto border-4  border-danger weather  d-flex flex-column align-items-center justify-content-center " 
     style={{padding:"30px 40px",borderRadius:"10px",placeSelf:"center"}}
