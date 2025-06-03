@@ -24,7 +24,7 @@
   color: #626262;
   background: #ebfffc;
   font-size: 16px;
-  
+  overflow: hidden;
 }
 
 .search-bar img{
@@ -33,5 +33,5 @@
   border-radius: 50%;
   background: #ebfffc;
   cursor: pointer;
-
+  overflow: hidden;
 }
