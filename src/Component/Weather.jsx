@@ -71,8 +71,8 @@ const Weather = () => {
     },[])
 
   return (
-    <Container fluid className=' m-0 p-0 border-danger border app border-4'>
-    <Row className='border-primary m-0  border-3' >
+    <Container fluid className='w-100 border-danger border app border-4'>
+    <Row className='border-primary m-0  border-3'style={{overflow:"hidden"}}>
     <Col xs={11} sm={8} md={6} lg={4} className="mx-auto border-4  border-danger weather  d-flex flex-column align-items-center justify-content-center " 
     style={{padding:"30px 40px",borderRadius:"10px",placeSelf:"center"}}
     // style={{position:"relative",overflow:"hidden",,padding:"40px",borderRadius:"10px",transition:"fadeIn"}}
