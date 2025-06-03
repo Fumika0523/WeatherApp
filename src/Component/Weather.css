@@ -34,14 +34,15 @@ font-size: 40px;
   width: 100%;
   margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .weather-data .col{
     display: flex;
       /* border:2px solid red; */
     align-items: flex-start;
-    gap:12px;
+    justify-content: center;
+    gap:13px;
     font-size: 22px;
 }
 

@@ -72,7 +72,7 @@ const Weather = () => {
 
   return (
     <Container fluid className='w-100 border-danger  app border-4'>
-    <Row className='border-primary m-0  border-3'style={{overflow:"hidden"}}>
+    <Row className='border-primary m-0 p-0 d-flex align-items-start flex-row border-3'style={{overflow:"hidden"}}>
     <Col xs={12} sm={8} md={6} lg={4} className="mx-auto border-4  border-danger weather  d-flex flex-column align-items-center justify-content-center " 
     style={{padding:"40px",borderRadius:"10px",placeSelf:"center"}}
     // style={{position:"relative",overflow:"hidden",,padding:"40px",borderRadius:"10px",transition:"fadeIn"}}
@@ -87,7 +87,7 @@ const Weather = () => {
           <p className='temperature'>{weatherData.tempreture}℃</p>
           {/* Location */}
           <p className='location'>{weatherData.location}</p>
-            <div className="weather-data mx-auto ">
+            <div className="weather-data   ">
                 <div className="col border-danger">
                     <img src={humidity_icon} alt="" />
                     <div>
