@@ -77,7 +77,7 @@ const Weather = () => {
     style={{padding:"30px 40px",borderRadius:"10px",placeSelf:"center"}}
     // style={{position:"relative",overflow:"hidden",,padding:"40px",borderRadius:"10px",transition:"fadeIn"}}
     >
-        <div className="search-bar d-flex align-items-center gap-3 ">
+        <div className="search-bar d-flex align-items-center gap-3 " style={{overflow:"hidden"}}>
             <input ref={inputRef} type="text" placeholder='Search' className='bg-light'/>
             <img src={search_icon} alt=""  onClick={()=>search(inputRef.current.value)}/>
         </div>

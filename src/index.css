@@ -6,12 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+ 
 }
 
 .app{
   min-height: 100vh;
   display: grid;
-  background:#e2f6e8 ;
+   background:#e2f6e8 ;
 }
 
 .search-bar input{
@@ -23,6 +24,7 @@
   color: #626262;
   background: #ebfffc;
   font-size: 16px;
+  
 }
 
 .search-bar img{
