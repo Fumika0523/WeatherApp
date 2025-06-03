@@ -8,7 +8,9 @@ import rain_icon from '../assets/rain.png'
 import snow_icon from '../assets/snow.png'
 import wind_icon from '../assets/wind.png'
 import humidity_icon from '../assets/humidity.png'
-import { Row } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 const Weather = () => {
@@ -69,8 +71,12 @@ const Weather = () => {
     },[])
 
   return (
-    <Row>
-    <div className="col-11 col-sm-6 mx-auto weather  d-flex flex-column align-items-center" style={{padding:"40px",placeSelf:"center",borderRadius:"10px"}}>
+    <Container fluid className=' m-0 p-0 border-danger app border-4'>
+    <Row className='border-primary m-0  border-3' >
+    <Col xs={11} sm={8} md={6} lg={4} className="mx-auto border-4  border-danger weather  d-flex flex-column align-items-center justify-content-center " 
+    style={{padding:"30px 40px",borderRadius:"10px",placeSelf:"center"}}
+    // style={{position:"relative",overflow:"hidden",,padding:"40px",borderRadius:"10px",transition:"fadeIn"}}
+    >
         <div className="search-bar d-flex align-items-center gap-3 ">
             <input ref={inputRef} type="text" placeholder='Search' className='bg-light'/>
             <img src={search_icon} alt=""  onClick={()=>search(inputRef.current.value)}/>
@@ -102,8 +108,9 @@ const Weather = () => {
         <>
         </>
         }
-     </div>
+     </Col>
     </Row>
+    </Container>
   )
 }
 
