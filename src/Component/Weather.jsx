@@ -8,6 +8,7 @@ import rain_icon from '../assets/rain.png'
 import snow_icon from '../assets/snow.png'
 import wind_icon from '../assets/wind.png'
 import humidity_icon from '../assets/humidity.png'
+import { Row } from 'react-bootstrap'
 
 
 const Weather = () => {
@@ -68,7 +69,8 @@ const Weather = () => {
     },[])
 
   return (
-    <div className="weather  d-flex flex-column align-items-center" style={{padding:"40px",placeSelf:"center",borderRadius:"10px"}}>
+    <Row>
+    <div className="col-11 col-sm-6 mx-auto weather  d-flex flex-column align-items-center" style={{padding:"40px",placeSelf:"center",borderRadius:"10px"}}>
         <div className="search-bar d-flex align-items-center gap-3 ">
             <input ref={inputRef} type="text" placeholder='Search' className='bg-light'/>
             <img src={search_icon} alt=""  onClick={()=>search(inputRef.current.value)}/>
@@ -101,6 +103,7 @@ const Weather = () => {
         </>
         }
      </div>
+    </Row>
   )
 }
 
